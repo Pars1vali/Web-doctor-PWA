@@ -2,7 +2,17 @@
     "name": "Web-доктор",
     "short_name": "Web-доктор",
     "description": "PWA приложение платформы Web-доктор для докторов и клиентов.",
-    "icons": [
+    "icons": [        
+      {
+        "src": "icon72x72.png",
+        "sizes": "72x72",
+        "type": "image/png"
+      },
+      {
+        "src": "icon96x96.png",
+        "sizes": "96x96",
+        "type": "image/png"
+      },
       {
         "src": "icon192x192.png",
         "sizes": "192x192",
