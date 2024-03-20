@@ -1,12 +1,17 @@
 {
-    "name": "Dev'Coffee",
-    "short_name": "DevCoffee",
-    "start_url": "index.html",
-    "display": "standalone",
-    "background_color": "#fdfdfd",
-    "theme_color": "#db4938",
-    "orientation": "portrait-primary",
+    "name": "Пример PWA",
+    "short_name": "PWA Пример",
+    "description": "Пример простого прогрессивного веб-приложения",
     "icons": [
-      
-    ]
+      {
+        "src": "icon.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      }
+    ],
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#ffffff"
   }
+  

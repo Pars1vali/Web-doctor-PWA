@@ -1,16 +1,22 @@
-const showCoffees = () => {
-    let output = ""
-    coffees.forEach(
-      ({ name, image }) =>
-        (output += `
-                <div class="card">
-                  <img class="card--avatar" src=${image} />
-                  <h1 class="card--title">${name}</h1>
-                  <a class="card--link" href="#">Taste</a>
-                </div>
-                `)
-    )
-    container.innerHTML = output
-  }
-  
-  document.addEventListener("DOMContentLoaded", showCoffees)
+// Проверка поддержки сервисных работников
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/service-worker.js')
+            .then(registration => {
+                console.log('Service Worker зарегистрирован:', registration);
+            })
+            .catch(error => {
+                console.log('Ошибка при регистрации Service Worker:', error);
+            });
+    });
+}
+
+// Пример работы события клика
+document.addEventListener('DOMContentLoaded', () => {
+    const button = document.createElement('button');
+    button.textContent = 'Нажми меня!';
+    button.addEventListener('click', () => {
+        alert('Вы нажали на кнопку!');
+    });
+    document.body.appendChild(button);
+});

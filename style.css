@@ -1,3 +1,12 @@
-*{
-    background-color: rgb(154, 248, 248);
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+p {
+    color: #666;
 }
