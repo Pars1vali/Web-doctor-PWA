@@ -1,10 +1,10 @@
 {
-    "name": "Пример PWA",
-    "short_name": "PWA Пример",
-    "description": "Пример простого прогрессивного веб-приложения",
+    "name": "Web-доктор",
+    "short_name": "Web-доктор",
+    "description": "PWA приложение платформы Web-доктор для докторов и клиентов.",
     "icons": [
       {
-        "src": "icon.png",
+        "src": "icon192x192.png",
         "sizes": "192x192",
         "type": "image/png"
       }

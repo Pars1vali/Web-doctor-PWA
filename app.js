@@ -10,13 +10,3 @@ if ('serviceWorker' in navigator) {
             });
     });
 }
-
-// Пример работы события клика
-document.addEventListener('DOMContentLoaded', () => {
-    const button = document.createElement('button');
-    button.textContent = 'Нажми меня!';
-    button.addEventListener('click', () => {
-        alert('Вы нажали на кнопку!');
-    });
-    document.body.appendChild(button);
-});
