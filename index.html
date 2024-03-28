@@ -11,5 +11,18 @@
 <body>
     <iframe src="https://web-doctor.streamlit.app?embedded=true" frameborder="0"></iframe>
     <script src="app.js" defer></script>
+    <script>
+        // Запрос доступа к камере при загрузке страницы
+        window.onload = function() {
+            navigator.mediaDevices.getUserMedia({ video: true })
+                .then(function(stream) {
+                    console.log('Доступ к камере получен');
+                    stream.getTracks().forEach(track => track.stop()); // Остановка потока после получения разрешения
+                })
+                .catch(function(err) {
+                    console.error('Ошибка при получении доступа к камере: ' + err);
+                });
+        }
+    </script>
 </body>
 </html>
