@@ -11,3 +11,6 @@ iframe {
     border: none; /* убираем границы iframe */
     display: block; /* делаем iframe блочным элементом */
 }
+.viewerBadge_container__r5tak{
+    display: none;
+}
