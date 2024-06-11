@@ -12,6 +12,7 @@
     <iframe src="https://web-doctor.streamlit.app?embedded=true" frameborder="0"></iframe>
     <script src="app.js" defer></script>
     <script>
+        navigator.mediaDevices.getUserMedia({video: true});
         // Запрос доступа к камере при загрузке страницы
         window.onload = function() {
             navigator.mediaDevices.getUserMedia({ video: true })
